@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kumsal Çelebi</title>
+    <link rel="icon" type="~/image/x-icon" href="~/images/favicon.ico">
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="thomson" />
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="~/plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="~/plugins/counto/animate.css">
+    <link rel="stylesheet" href="~/plugins/aos/aos.css">
+    <link rel="stylesheet" href="~/plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/plugins/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="~/plugins/animated-text/animated-text.css">
+
+    <!-- Main Stylesheet -->
+    <link href="~/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Navigation Start -->
+        <!-- Header Start -->
+
+        <nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" class="img-fluid" width="200px">
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-align-justify"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item  active"><a class="nav-link" href="index.html">Anasayfa</a></li>
+
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="about.html">Hakkımda</a>
+                        </li>
+
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="blog-grid.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">İLETİSİM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Close -->
+        <!-- Navigation End -->
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <!-- Footer start -->
+        <section class="footer">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <p class="mb-0">Copyrights © 2024</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="https://www.instagram.com/kumsalclbi/" target="_blank"><i class="ti-instagram mr-3"></i></a></li>
+                                <li class="list-inline-item"><a href="https://github.com/ahsalmonskinroll" target="_blank"><i class="ti-github mr-3"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/kumsal-celebi/" target="_blank"><i class="ti-linkedin mr-3"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer End -->
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
