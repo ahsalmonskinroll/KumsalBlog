@@ -39,10 +39,10 @@
 	      <div class="col-lg-4 col-6 mb-4 shuffle-item"  data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
 		      	<div class="position-relative inner-box">
 		          <div class="image position-relative ">
-	               <img src="images/portfolio/1.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+						<img src="~/images/portfolio/1.png" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
+	                  <div class="overlay-inner"> <!--portfolio-single-->
+								<a class="overlay-content" href="@Url.Action("YazilimMuhendisligi", "Home")">
 	                      <h5 class="mb-0">Yazılım</h5>
 	                      <p>Mühendisliği</p>
 	                    </a>
@@ -55,10 +55,10 @@
 	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
 	        <div class="position-relative inner-box" >
 	            <div class="image position-relative ">
-	               <img src="images/portfolio/4.png  " alt="portfolio-image" class="img-fluid w-100 d-block">
+						<img src="~/images/portfolio/4.png  " alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-		                    <a class="overlay-content" href="portfolio-single2.html">
+	                  <div class="overlay-inner"> <!--portfolio-single2-->
+								<a class="overlay-content" href="@Url.Action("DKUG", "Home")">
 		                      <h5 class="mb-0">KUIKA ile</h5>
 		                      <p>Düşük Kodlu Uygulama Geliştirme</p>
 		                    </a>
@@ -73,8 +73,8 @@
 	            <div class="image position-relative ">
 	               <img src="images/portfolio/3.png" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single3.html">
+	                  <div class="overlay-inner"> <!--prtfolio single3-->
+								<a class="overlay-content" href="@Url.Action("Bitirme", "Home")">
 	                      <h5 class="mb-0">Bitirme</h5>
 	                      <p>Projesi</p>
 	                    </a>
@@ -90,7 +90,7 @@
 	               <img src="images/portfolio/5.png" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
 	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single4.html">
+								<a class="overlay-content" href="@Url.Action("Viki", "Home")">
 	                      <h5 class="mb-0">Wikipedia</h5>
 	                      <p>Türkçe Katkı</p>
 	                    </a>
@@ -104,20 +104,3 @@
 </section>
 <!-- Portfolio End -->
 
-<!-- jQuery -->
-<script src="~/plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="~/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="~/plugins/aos/aos.js"></script>
-<script src="~/plugins/owl-carousel/owl.carousel.min.js"></script>
-<script src="~/plugins/shuffle/shuffle.min.js"></script>
-<script src="~/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="~/plugins/animated-text/animated-text.js"></script>
-<script src="~/plugins/counto/apear.js"></script>
-<script src="~/plugins/counto/counTo.js"></script>
-
- <!-- Google Map -->
-<script src="~/plugins/google-map/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
-<!-- Main Script -->
-<script src="~/js/script.js"></script>
