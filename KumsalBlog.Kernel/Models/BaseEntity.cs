@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KumsalBlog.Kernel.Models
 {
-	public class BaseEntity //miras alacağımız class. her entiiy girişi için lazım. prpf yaz 2 tab yap.
+	public class BaseEntity //miras alacağımız class. her entity girişi için lazım. prop yaz 2 tab yap.
 	{
 		private int id;
 

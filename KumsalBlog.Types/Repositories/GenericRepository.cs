@@ -34,24 +34,6 @@ namespace KumsalBlog.Types.Repositories
 			return await _dbSet.AnyAsync(expression);
 		}
 
-		//public Task AuthenticateAsync(T entity,)
-		//{
-		//	// Şifreyi hashleyip karşılaştırmak daha güvenli bir yaklaşım olur
-		//	var user = await _context.Users.SingleOrDefaultAsync(x => x.Username == username && x.Password == password);
-
-		//	if (user == null)
-		//	{
-		//		return null;
-		//	}
-
-		//	return user;
-		//}
-
-		/// <summary>
-		/// AsNoTracking ef core cektigi datalari memory'e almayip ve daha optimize calismasini saglar.
-		/// </summary>
-		/// <param name="expression"></param>
-		/// <returns></returns>
 		public IQueryable<T> GetAll()
 		{
 			return _dbSet.AsNoTracking().AsQueryable();

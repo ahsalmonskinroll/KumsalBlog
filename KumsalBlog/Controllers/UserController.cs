@@ -13,13 +13,12 @@ namespace KumsalBlog.Controllers
 	{
 
 		private readonly IService<User> _service;
-		//private readonly IMapper _mapper;
 		private readonly AppDbContext _context;
 
-		public UserController(IService<User> service, AppDbContext context)  /*IMapper mapper,*/
+		public UserController(IService<User> service, AppDbContext context) 
 		{
 			_service = service;
-			//_mapper = mapper;
+
 			_context = context;
 		}
 
@@ -28,16 +27,6 @@ namespace KumsalBlog.Controllers
 			return View();
 		}
 
-		//public async Task<IActionResult> Save()
-		//{
-		//	var students = await _services.GetAllAsync();
-
-		//	var studentDto = _mapper.Map<List<StudentDto>>(students.ToList());
-
-		//	ViewBag.students = new SelectList(studentDto, "Id", "TcNo");
-
-		//	return View(studentDto);
-		//}
 
 		[HttpPost]
 		public async Task<IActionResult> Save(User user)

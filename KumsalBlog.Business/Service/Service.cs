@@ -48,12 +48,6 @@ namespace KumsalBlog.Business.Service
         public async Task<T> GetByIdAsync(int id)
         {
             var has = await _repository.GetByIdAsync(id);
-            /*
-            if (has == null)
-            {
-                throw new NotFoundExcepiton($"{typeof(T).Name}({id}) not found");
-            }
-            */
             return has;
         }
 

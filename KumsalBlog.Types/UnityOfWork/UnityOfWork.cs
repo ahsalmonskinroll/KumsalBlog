@@ -1,5 +1,4 @@
 ﻿using KumsalBlog.Kernel.UnityOfWork;
-using KumsalBlog.Kernel.UnityOfWork;
 using KumsalBlog.Types;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
