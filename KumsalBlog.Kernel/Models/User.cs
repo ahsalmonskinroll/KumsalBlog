@@ -32,6 +32,14 @@ namespace KumsalBlog.Kernel.Models
 			set { comment = value; }
 		}
 
+		private int rating;
+
+		public int Rating
+		{
+			get { return rating; }
+			set { rating = value; }
+		}
+
 
 	}
 }

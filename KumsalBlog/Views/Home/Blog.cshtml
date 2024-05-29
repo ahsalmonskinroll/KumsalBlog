@@ -126,7 +126,7 @@
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<h3 class="text-center mb-4">Yorum Yap</h3>
-				<form action="/submit-comment" method="post">
+					<form asp-action="Save" method="post" asp-controller="User" class="row g-3">
 					<div class="form-group">
 						<label for="username">Kullanıcı Adı:</label>
 						<input type="text" class="form-control" id="username" name="username" required>
@@ -155,3 +155,52 @@
 		</div>
 	</div>
 </section>
+
+	<!--EKLER BAŞLANGIÇ-->
+
+	<div class="container">
+		<br />
+		<h5>Ekler</h5>
+		<div class="container row">
+
+			<div class="col-sm">
+				<label for="Transcript" class="form-label">Transkript (Onaylı PDF)</label>
+				<input type="file" form="form-control" class="form-control" id="Transcript" name="Transcript" accept=".pdf" required>
+			</div>
+			<br>
+			<div class="col-sm">
+				<label for="CourseContents" class="form-label">Ders İçerikleri (Onaylı PDF)</label>
+				<input type="file" form="form-control" class="form-control" id="CourseContents" name="CourseContents" accept=".pdf" required>
+			</div>
+		</div>
+
+	</div>
+	<!--EKLER BİTİŞ-->
+	<!--Checkbox-->
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		<label class="form-check-label" for="flexCheckDefault">
+			Yukarıdaki bilgileri okudum ve onaylıyorum.
+		</label>
+	</div>
+
+	@* buraya bak *@
+	<div class="col-12  text-end">
+		<button type="submit" id="showPopup" href="@Url.Action("Subject", "Subject") class="btn btn-primary" style="background-color: #456097; color: white; border: 2px solid #bad1da; border-radius: 10px;"> Kaydet </button>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var checkbox = document.getElementById('flexCheckDefault');
+			var submitButton = document.getElementById('showPopup');
+
+			// Checkbox değiştiğinde butonun durumunu kontrol eden işlev
+			checkbox.addEventListener('change', function () {
+				submitButton.disabled = !this.checked;
+			});
+
+			// Sayfa yüklendiğinde butonu pasif hale getir
+			submitButton.disabled = true;
+		});
+	</script>
+
